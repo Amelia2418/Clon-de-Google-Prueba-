@@ -1,9 +1,19 @@
+
+/* -----------------------------------  GENERAL  ----------------------------------------------------- */
+
+:root {
+    --letras_pequeñas: 1.3rem;
+    --letras_medianas: 1.4rem;
+    --color_fondo: white;
+    --color_gris_claro: #f3f3f3;
+    --color_gris_medio: #d8d8d8;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
 
 html {
     font-size: 62.5%;
@@ -13,19 +23,17 @@ html {
 /* -------------------------------------  HEADER  ------------------------------------------------------ */
 
 .header {
-    background-color: white;
+    background-color: var(--color_fondo);
     width: 100%;
-    height: 6.0rem; 
+    min-height: 6.0rem; 
 }
-
 
 .header_nav {
     display: flex;
     justify-content: flex-end;
     width: 99%;
-    height: 6.0rem; 
+    min-height: inherit; 
 }
-
 
 .header_nav__ul {
     display: flex;
@@ -38,32 +46,33 @@ html {
 }
 
 
-.header__li {
+/* ------------ GMAIL & IMÁGENES ----------- */
+.option {
     display: flex;
     align-items: center;
     justify-content: center;
     min-width: 3.5rem;
     height: 3.5rem;
-    font-size: 1.3rem;
+    font-size: var(--letras_pequeñas);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-.header__li a {
+.option a {
     text-decoration: none;
     color: black;
 }
 
-.header__li a:hover {
+.option a:hover {
     text-decoration: underline solid;
 }
 
-.header__li a:active {
+.option a:active {
     color: mediumslateblue;
 }
 
 
-.header__li__picture1, .header__li__picture2 {
+/* ------------ APLICACIONES ----------- */
+.option_picture1, .option_picture2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,32 +81,33 @@ html {
 }
 
 
-.header__li__picture1 img {
+.option_picture1 img {
     width: 3.3rem;
     height: 3.3rem;
     border-radius: 2.7rem;
 }
 
-.header__li__picture1 img:hover {
+.option_picture1 img:hover {
     background-color: #e8e8e8;
 }
 
-.header__li__picture1 img:active {
+.option_picture1 img:active {
     background-color: #cfcfcf;
 }
 
 
-.header__li__picture2 img {
+/* ------------ CUENTA DE GOOGLE ----------- */
+.option_picture2 img {
     width: 3.5rem;
     height: 3.5rem;
     border-radius: 2.7rem;
 }
 
-.header__li__picture2 img:hover {
+.option_picture2 img:hover {
     box-shadow: 0 0 0.3rem 0.3rem #d6d6d6;
 } 
 
-.header__li__picture2 img:active {
+.option_picture2 img:active {
     box-shadow: 0 0 0.3rem 0.3rem #b3b3b3;
 }
 
@@ -105,13 +115,12 @@ html {
 /* --------------------------------------  MAIN  ------------------------------------------------------ */
 
 .main {
-    background-color: white;
+    background-color: var(--color_fondo);
     width: 100%;
     height: 47.1em;
     display: flex;
     justify-content: center;
 }
-
 
 .main_article {
     width: 58.0rem;
@@ -119,6 +128,7 @@ html {
 }
 
 
+/* -------------- LOGO DE GOOGLE -------------- */
 .main_article__section1__picture {
     height: 11.5rem;
     width: 100%;
@@ -131,6 +141,7 @@ html {
 }
 
 
+/* ---------------- BUSQUEDA ----------------- */
 .main_article__section2 {
     width: 100%;
     height: 4.5rem;
@@ -143,7 +154,6 @@ html {
 }
 
 .main-article__form {
-    /* background-color: forestgreen; */
     width: 98%;
     height: 4.5rem;
     display: flex;
@@ -158,7 +168,6 @@ html {
     border: none;
 }
 
-
 .img1 {
     height: 1.5rem;
 }
@@ -169,18 +178,17 @@ html {
 }
 
 
+/* ------------------ BOTONES --------------- */
 .main_article__section3 {
-    /* background-color: aliceblue; */
     height: 9.6rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
 button {
-    background-color: #e8e8e8;
-    font-size: 1.4rem;
+    background-color: var(--color_gris_claro);
+    font-size: var(--letras_medianas);
     border-radius: 0.5rem;
     width: 16.0rem;
     height: 3.5rem;
@@ -189,38 +197,48 @@ button {
 }
 
 
+/* ------------------ IDIOMAS ------------------- */
 .main_article__section4 {
     display: flex;
     justify-content: center;
 }
 
-
 .main_article__section4 p{
-    font-size: 1.3rem;
+    font-size: var(--letras_pequeñas);
     font-family: Arial, Helvetica, sans-serif;
     margin-right: 0.5rem;
 }
-
 
 .idiomas {
     text-decoration: none;
     color: blue;
 }
 
+.idiomas:hover {
+    text-decoration: underline;
+}
+
+.idiomas:active {
+    color: rgb(68, 68, 255);
+}
+
+
 /* -------------------------------------  FOOTER  ------------------------------------------------------ */
 
 .footer {
-    background-color: #e8e8e8;
+    background-color: var(--color_gris_claro);
     width: 100%;
     height: 9.4rem;
 }
 
+
+/* ---------------- PAÍS ---------------- */
 .footer_section1 {
     display: flex;
     align-items: center;
     width: 100%;
     height: 50%;
-    border-bottom: solid 0.1rem #c5c5c5;
+    border-bottom: solid 0.1rem var(--color_gris_medio);
 }
 
 .footer_section1__p {
@@ -229,53 +247,52 @@ button {
     display: flex;
     width: 4.8%;
     justify-content: flex-end;    
+    color: #5f5f5f;
 }
 
 
+/* ------------- INFORMACIÓN ------------- */
 .footer_section2 {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 0 auto;
     width: 95.2%;
     height: 50%;
 }
 
+
+/* ------------ INFO. IZQUIERDA ----------- */
 .footer_section2__ul1 {
     display: flex;
     list-style: none;
-    width: 36.7%;
+    min-width: 47.4rem;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-
 .section2__ul1__li {
-    font-size: 1.4rem;
+    font-size: var(--letras_medianas);
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     align-items: center;
+    min-width: 6.5rem;
 }
 
 
+/* ------------- INFO. DERECHA ------------ */
 .footer_section2__ul2 {
     display: flex;
     list-style: none;
-    width: 21.7%;
+    min-width: 28.3rem;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
-
-.section2__ul2__li {
-    font-size: 1.4rem;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    align-items: center;
-}
-
 
 .enlace {
     text-decoration: none;
-    color: #535353;
+    color: #5f5f5f;
 }
-
 
 .enlace:hover {
     text-decoration: underline;

@@ -11,36 +11,52 @@
     </head>
     <body>
 
-<!-------------------------------------  HEADER  ------------------------------------------------------>
+    <!-----------------------------------  HEADER  ---------------------------------------------------->
 
         <header class="header">
             <nav class="header_nav">
                 <ul class="header_nav__ul">
-                    <li class="header__li"><a href="">Gmail</a></li>
-                    <li class="header__li"><a href="">Imágenes</a></li>
-                    <li class="header__li">
-                        <picture class="header__li__picture1">
-                            <img src="./pictures/opciones_icono.png" alt="">
+   
+                <!------- GMAIL ------>
+                    <li class="option">
+                        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">Gmail</a>
+                    </li>
+
+                <!------ IMÁGENES ------>
+                    <li class="option">
+                        <a href="https://www.google.com.pe/imghp?hl=es&tab=ri&authuser=0&ogbl">Imágenes</a>
+                    </li>
+
+                <!------ APLICACIONES ------>
+                    <li class="option">
+                        <picture class="option_picture1">
+                            <img src="./pictures/opciones_icono.png" alt="Aplicaciones" title="Aplicaciones">
                         </picture>
                     </li>
-                    <li class="header__li">
-                        <picture class="header__li__picture2">
-                            <img src="./pictures/user.jpg" alt="">
+
+                <!------- USUARIO ------->
+                    <li class="option">
+                        <picture class="option_picture2">
+                            <img src="./pictures/user.jpg" alt="Cuenta de Google" title="Cuenta de Google">
                         </picture>
                     </li>
                 </ul>
             </nav>
         </header>
 
-<!--------------------------------------  MAIN  ------------------------------------------------------>
+    <!------------------------------------  MAIN  ---------------------------------------------------->
 
         <main class="main">
             <article class="main_article">
+
+            <!--------------- LOGO DE GOOGLE --------------->
                 <section class="main_article__section1">
                     <picture class="main_article__section1__picture">
-                        <img src="./pictures/logo_google.png" alt="">
+                        <img src="./pictures/logo_google.png" alt="Logo de Google" title="Google">
                     </picture>
                 </section>
+
+            <!------------------ BUSQUEDA ------------------>
                 <section class="main_article__section2">
                     <form class="main-article__form" action="">
                         <img class="img1" src="./pictures/lupa_logo.png" alt="">
@@ -48,10 +64,14 @@
                         <img class="img2" src="./pictures/micrófono_google .png" alt="">
                     </form>
                 </section>
+
+            <!------------------- BOTONES ------------------>
                 <section class="main_article__section3">
-                    <button>Buscar con Google</button>
+                    <button >Buscar con Google</button>
                     <button>Me siento con suerte</button>
                 </section>
+
+            <!------------------- IDIOMAS ------------------>
                 <section class="main_article__section4">
                     <p>Ofrecido por Google en:</p>
                     <p><a class="idiomas" href="">English</a></p>
@@ -61,23 +81,58 @@
             </article>
         </main>
 
-<!-------------------------------------  FOOTER  ------------------------------------------------------>
+    <!-----------------------------------  FOOTER  ---------------------------------------------------->
 
         <footer class="footer">
+
+        <!--------------- PAÍS --------------->
             <section class="footer_section1">
-                <p class="footer_section1__p"><a class="enlace" href="">Perú</a></p>
+                <p class="footer_section1__p">Perú</p>
             </section>
+
             <section class="footer_section2">
                 <ul class="footer_section2__ul1">
-                    <li class="section2__ul1__li"><a class="enlace" href="">Sobre Google</a></li>
-                    <li class="section2__ul1__li"><a class="enlace" href="">Publicidad</a></li>
-                    <li class="section2__ul1__li"><a class="enlace" href="">Negocios</a></li>
-                    <li class="section2__ul1__li"><a class="enlace" href="">Cómo funciona la Búsqueda</a></li>
+
+                <!------------ INFO. IZQUIERDA ------------>
+                    <li class="section2__ul1__li">
+                        <a class="enlace" 
+                        href="https://about.google/?utm_source=google-PE&utm_medium=referral&utm_campaign=hp-footer&fg=1">
+                        Sobre Google</a>
+                    </li>
+                    <li class="section2__ul1__li">
+                        <a class="enlace" 
+                        href="https://ads.google.com/intl/es_pe/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">
+                        Publicidad</a>
+                    </li>
+                    <li class="section2__ul1__li">
+                        <a class="enlace" 
+                        href="https://smallbusiness.withgoogle.com/intl/es-419_pe/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=ww-ww-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u&c=PE#!/">
+                        Negocios</a>
+                    </li>
+                    <li class="section2__ul1__li">
+                        <a class="enlace" 
+                        href="https://www.google.com/search/howsearchworks/?fg=1">
+                        Cómo funciona la Búsqueda</a>
+                    </li>
                 </ul>
+
                 <ul class="footer_section2__ul2">
-                    <li class="section2__ul2__li"><a class="enlace" href="">Privacidad</a></li>
-                    <li class="section2__ul2__li"><a class="enlace" href="">Condiciones</a></li>
-                    <li class="section2__ul2__li"><a class="enlace" href="">Preferencias</a></li>
+
+                <!------------------ INFO. DERECHA ------------------>
+                    <li class="section2__ul1__li">
+                        <a class="enlace" 
+                        href="https://policies.google.com/privacy?hl=es-PE&fg=1">
+                        Privacidad</a>
+                    </li>
+                    <li class="section2__ul1__li">
+                        <a class="enlace" 
+                        href="https://policies.google.com/terms?hl=es-PE&fg=1">
+                        Condiciones</a>
+                    </li>
+                    <li class="section2__ul1__li">
+                        <a class="enlace" href="">
+                        Preferencias</a>
+                    </li>
                 </ul>
             </section>
         </footer>
